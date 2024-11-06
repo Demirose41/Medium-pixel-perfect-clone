@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    border-bottom: black 1px solid;
+    font-family: sohne, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.Home_logo {
+    height: 25px;
+    padding: 25px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    flex-direction: row;
+    padding-right: 50px;
+}
+nav a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px;
+    color: rgb(25, 25, 25);
+    line-height: 20px;
+    text-indent: 0px;
+    text-decoration: none solid rgb(25, 25, 25)
+}
+
+button {
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border-radius: 99em;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none solid black;
+    padding: 8px 16px;
+    line-height: 20px;
+}
+
