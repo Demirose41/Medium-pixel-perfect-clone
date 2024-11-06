@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medium</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </head>
 <body style="margin: 0px 0px 0px 0px">
     <header class="main_header">
@@ -25,9 +36,9 @@
                 </div>
             </div>
             <div class="main_content">
-                <h2>Human stories & ideas</h2>
+                <h2>Human <br>stories & ideas</h2>
                 <h3>A place to read, write, and deepen your understanding</h3>
-                <button class="main_button"> Start reading</button>
+                <button onclick="document.getElementById('id01').style.display='block'" class="main_button"> Start reading</button>
             </div>
         </div>
     </div>
@@ -43,5 +54,34 @@
         <a class="footer_link">Text to speech</a>
         <a class="footer_link">Teams</a>
     </footer>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+
+          <div class="container">
+            <h2> Join Medium</h2>
+            <div class="container_links">
+                <a>Sign up with Google</a>
+                <a>Sign up with Facebook</a>
+                <a>Sign up with email</a>
+                <div class="account_exists">
+                    <p>
+                        Already have an account?
+                        <button class="sign_in">
+                            <b>
+                                Sign in
+                            </b>
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
 </body>
 </html>

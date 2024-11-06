@@ -1,6 +1,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./content.css);
+@import url(./login_form.css);
 
 body {
     background-color: #F7F4ED;

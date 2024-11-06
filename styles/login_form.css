@@ -1,0 +1,102 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    height: 80%;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .container h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .container_links {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .container_links a{
+    border: black 1px solid;
+    width: 100%;
+    padding: 8px;
+    line-height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 99em;
+    display: block;
+    font-size: 16px;
+    font-family:  sohne, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  
+  .account_exists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sign_in {
+    text-align: center;
+    justify-self: center;
+    color: rgb(21, 109, 18);
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    width: fit-content;
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
