@@ -1,6 +1,6 @@
-header {
+.main_header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px;
     border-bottom: black 1px solid;
     font-family: sohne, Helvetica Neue, Helvetica, Arial, sans-serif;
